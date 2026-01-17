@@ -5,11 +5,11 @@ on:
   workflow_dispatch:
     inputs:
       tag:
-        description: '2.5.4.1'
+        description: '2.5.0.1'
         required: false
         default: ''
       text:
-        description: '用于op24.10.3'
+        description: '用于op24.10.4'
         required: false
         default: ''
 concurrency:
@@ -30,7 +30,7 @@ jobs:
         arch:
           - aarch64_cortex-a53        
         sdk:
-          - 24.10.3
+          - 24.10.4
 
     steps:
       - uses: actions/checkout@v5
